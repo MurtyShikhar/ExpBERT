@@ -29,7 +29,7 @@ To run our code, first download the data/features into `$DATA_DIR`. The main poi
 
 `python run.py --data_dir $DATA_DIR/spouse --train --num_train_epochs 100 --task_name spouse --classifier_type feature_concat --exp_dir input-features --num_classes 2 --train_distributed 0 --dev_distributed 0 --save_model --output_dir $outdir`
 
-### Semparse (ProgExp) / Semparse (LangExp) / REGEX
+### Semparse (ProgExp) / Semparse (LangExp) / Patterns
 
 `python run.py --data_dir $DATA_DIR/spouse --train --num_train_epochs 100 --task_name spouse --classifier_type feature_concat --exp_dir input-features --feat_dir $feat --num_classes 2 --train_distributed 0 --dev_distributed 0 --save_model --output_dir $outdir`
 
@@ -42,9 +42,24 @@ where `$feat` is semparse-progexp-features, semparse-langexp-features or regex-f
 Note that `train_distributed` is set to 10 here since inside `spouse/expbert-features` there are 10 files corresponding to the training features. This sharding is done to parallelize the creation of expbert features.
 
 ## Feature Pipeline
-While we provide saved features used in this work, it is also possible to use this codebase to create ExpBERT like features for other explanations on any dataset. Here, we give an example of how one can create features for a dataset located in a directory `fictional-dataset`. The explanations that need to be interpreted should be inside `fictional-dataset/explanations/explanations.txt`. 
+To produce ExpBERT features for your own dataset/explanations, we also provide a feature-pipeline. First, download a BERT/SciBERT model fine-tuned on the MultiNLI dataset from [here]() into $BERT. 
 
-First, start by creating a `config.yaml` file (an example can be found in `spouse/input-features`). This file contains various paths as well as the interpreter to be used. Then, run the following command to produce features:
 
-`python create_features.py --exp_config`
+Then create a `config.yaml` file such as the following:
+
+```
+interpreter:
+    type: bert
+    path: $BERT
+    use_logits: False
+paths:
+    data_dir: $fictional_dataset_dir
+    exp_dir: explanations
+    save_dir: $fictional_dataset_dir/expbert-features
+data_reader: reader
+```
+
+Note that while we provide readers for the datasets used in this paper, a different reader might be required for your dataset - look at `data_utils/readers.py` for more info.
+
+Finally, run the following command to produce features: `python create_features.py --exp_config config.yaml`. 
 
