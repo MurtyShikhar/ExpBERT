@@ -23,7 +23,7 @@ pip install -e .
 
 ## Setup
 
-To run our code, first download the data/features into `$DATA_DIR`. The main point of entry to the code is `run.py`. Below we provide commands to train models on the `Spouse` dataset:
+To run our code, first download the data/features into `$DATA_DIR`. The main point of entry to the code is `run.py`. Below we provide commands to train models on the `Spouse` dataset. To modify it for `Disease` set `--task_name disease` and to modify it for `TACRED`, set `--task_name tacred` and  `--num_classes 42`:
 
 ### NoExp
 
