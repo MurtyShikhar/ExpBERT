@@ -1,7 +1,7 @@
 # ExpBERT
 
 <p align="center">
-  <img src="assets/expbert.png" width="550" title="hover text" alt="Overview of the ExpBERT approach.">
+  <img src="assets/expbert.png" width="550" title="Overview of the ExpBERT approach." alt="Overview of the ExpBERT approach.">
 </p>
 
 This repository contains code, scripts, data and checkpoints for running experiments in the following paper:
@@ -21,7 +21,7 @@ The experiments uses datasets and precomputed features which can be downloaded h
 Install all dependencies using `conda`:
 ```
 conda env create -f environment.yml
-conda activate lang-supevision
+conda activate lang-supervision
 pip install -e .
 ```
 
