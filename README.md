@@ -1,7 +1,7 @@
 # ExpBERT
 
 <p align="center">
-  <img src="assets/expbert.pdf" width="550" title="hover text" alt="Overview of the ExpBERT approach.">
+  <img src="assets/expbert.png" width="550" title="hover text" alt="Overview of the ExpBERT approach.">
 </p>
 
 This repository contains code, scripts, data and checkpoints for running experiments in the following paper:
