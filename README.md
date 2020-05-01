@@ -46,7 +46,7 @@ where `$feat` is semparse-progexp-features, semparse-langexp-features or regex-f
 Note that `train_distributed` is set to 10 here since inside `spouse/expbert-features` there are 10 files corresponding to the training features. This sharding is done to parallelize the creation of expbert features.
 
 ## Feature Pipeline
-To produce ExpBERT features for your own dataset/explanations, we also provide a feature-pipeline. First, download a BERT/SciBERT model fine-tuned on the MultiNLI dataset from [here]() into $BERT. 
+To produce ExpBERT features for your own dataset/explanations, we also provide a feature-pipeline. First, download a BERT/SciBERT model fine-tuned on the MultiNLI dataset from [here](https://drive.google.com/drive/folders/18mtsUyvjBU2JHtMjFG_xqSLm-q-0odPH?usp=sharing) into $BERT. 
 
 
 Then create a `config.yaml` file such as the following:
@@ -69,4 +69,4 @@ Finally, run the following command to produce features: `python create_features.
 
 ## Model Checkpoints
 
-Finally, we provide checkpoints for all models in our paper. The checkpoints can be found [here](). Commands for running the checkpoints can be found there as well.
+Finally, we provide checkpoints for all models in our paper. The checkpoints can be found [here](https://drive.google.com/drive/folders/1cTITDWxUSMHiVYeGd0BL0mydGFanwUcW?usp=sharing). Commands for running the checkpoints can be found there as well.
