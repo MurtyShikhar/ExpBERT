@@ -6,8 +6,8 @@ This repository contains code, scripts, data and checkpoints for running experim
 > [ExpBERT: Representation Engineering with Natural Language Explanations]
 
 The experiments uses datasets and precomputed features which can be downloaded here:
-- [Spouse][https://drive.google.com/drive/folders/18x2l0oEnudXATN0K91L75uT_Ag0YF_6P?usp=sharing]
-- [Disease][https://drive.google.com/drive/folders/1fZEFbWX0e7IZhzNPDroeD8gzu0VoERxt?usp=sharing]
+- [Spouse](https://drive.google.com/drive/folders/18x2l0oEnudXATN0K91L75uT_Ag0YF_6P?usp=sharing)
+- [Disease](https://drive.google.com/drive/folders/1fZEFbWX0e7IZhzNPDroeD8gzu0VoERxt?usp=sharing)
 - For TACRED, contact the authors directly.
 
 ## Abstract
