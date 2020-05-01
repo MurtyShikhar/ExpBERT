@@ -67,3 +67,6 @@ Note that while we provide readers for the datasets used in this paper, a differ
 
 Finally, run the following command to produce features: `python create_features.py --exp_config config.yaml`. 
 
+## Model Checkpoints
+
+Finally, we provide checkpoints for all models in our paper. The checkpoints can be found [here](). Commands for running the checkpoints can be found there as well.
