@@ -1,4 +1,4 @@
-# ExpBERT
+# ExpBERT: Representation Engineering with Natural Language Explanations
 
 <p align="center">
   <img src="assets/expbert.png" width="550" title="Overview of the ExpBERT approach." alt="Overview of the ExpBERT approach.">
