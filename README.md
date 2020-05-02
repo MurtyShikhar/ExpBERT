@@ -10,9 +10,9 @@ This repository contains code, scripts, data and checkpoints for running experim
 > [ExpBERT: Representation Engineering with Natural Language Explanations]
 
 The experiments uses datasets and precomputed features which can be downloaded here:
-- [Spouse](https://drive.google.com/drive/folders/18x2l0oEnudXATN0K91L75uT_Ag0YF_6P?usp=sharing)
-- [Disease](https://drive.google.com/drive/folders/1fZEFbWX0e7IZhzNPDroeD8gzu0VoERxt?usp=sharing)
-- For TACRED, contact the authors directly.
+- Spouse ([Hancock et al., 2018](https://arxiv.org/abs/1805.03818)): [download](https://drive.google.com/drive/folders/18x2l0oEnudXATN0K91L75uT_Ag0YF_6P?usp=sharing)
+- Disease: ([Wei et al., 2015](https://www.researchgate.net/profile/Yifan_Peng2/publication/288971322_Overview_of_the_BioCreative_V_chemical_disease_relation_CDR_task/links/56b2353708ae56d7b06cabe9.pdf)): [download](https://drive.google.com/drive/folders/1fZEFbWX0e7IZhzNPDroeD8gzu0VoERxt?usp=sharing)
+- TACRED ([Zhang et al., 2017](https://nlp.stanford.edu/projects/tacred/)): for access, please contact the [dataset creators](https://nlp.stanford.edu/projects/tacred/) directly.
 
 ## Abstract
 
