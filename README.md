@@ -15,7 +15,7 @@ The experiments uses datasets and precomputed features which can be downloaded h
 - For TACRED, contact the authors directly.
 
 ## Abstract
-
+Suppose we want to specify the inductive bias that married couples typically go on honeymoons for the task of extracting pairs of spouses from text. In this paper, we allow model developers to specify these types of inductive biases as natural language explanations. We use BERT fine-tuned on MultiNLI to "interpret" these explanations with respect to the input sentence, producing explanation-guided representations of the input. Across three relation extraction tasks, our method, ExpBERT, matches a BERT baseline but with 3--20$\times$ less labeled data and improves on the baseline by 3--10 F1 points with the same amount of labeled data.
 ## Dependencies
 
 Install all dependencies using `conda`:
@@ -41,7 +41,7 @@ where `$feat` is semparse-progexp-features, semparse-langexp-features or regex-f
 
 ### ExpBERT
 
-`python run.py --data_dir $DATA_DIR/spouse --train --num_train_epochs 100 --task_name spouse --classifier_type feature_concat --exp_dir input-features --feat_dir expbert-features --num_classes 2 --train_distributed 10 --dev_distributed 0 --save_model --output_dir $outdir`
+`python run.py --data_dir $DATA_DIR/spouse --train --num_train_epochs 100 --task_name spouse --classifier_type feature_concat --exp_dir expbert-features --num_classes 2 --train_distributed 10 --dev_distributed 0 --save_model --output_dir $outdir`
 
 Note that `train_distributed` is set to 10 here since inside `spouse/expbert-features` there are 10 files corresponding to the training features. This sharding is done to parallelize the creation of expbert features.
 
