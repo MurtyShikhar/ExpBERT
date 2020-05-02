@@ -10,12 +10,14 @@ This repository contains code, scripts, data and checkpoints for running experim
 > [ExpBERT: Representation Engineering with Natural Language Explanations]
 
 The experiments uses datasets and precomputed features which can be downloaded here:
-- [Spouse](https://drive.google.com/drive/folders/18x2l0oEnudXATN0K91L75uT_Ag0YF_6P?usp=sharing)
-- [Disease](https://drive.google.com/drive/folders/1fZEFbWX0e7IZhzNPDroeD8gzu0VoERxt?usp=sharing)
-- For TACRED, contact the authors directly.
+- Spouse ([Hancock et al., 2018](https://arxiv.org/abs/1805.03818)): [download](https://drive.google.com/drive/folders/18x2l0oEnudXATN0K91L75uT_Ag0YF_6P?usp=sharing)
+- Disease: ([Wei et al., 2015](https://www.researchgate.net/profile/Yifan_Peng2/publication/288971322_Overview_of_the_BioCreative_V_chemical_disease_relation_CDR_task/links/56b2353708ae56d7b06cabe9.pdf)): [download](https://drive.google.com/drive/folders/1fZEFbWX0e7IZhzNPDroeD8gzu0VoERxt?usp=sharing)
+- TACRED ([Zhang et al., 2017](https://nlp.stanford.edu/projects/tacred/)): for access, please contact the [dataset creators](https://nlp.stanford.edu/projects/tacred/) directly.
 
 ## Abstract
+
 Suppose we want to specify the inductive bias that married couples typically go on honeymoons for the task of extracting pairs of spouses from text. In this paper, we allow model developers to specify these types of inductive biases as natural language explanations. We use BERT fine-tuned on MultiNLI to "interpret" these explanations with respect to the input sentence, producing explanation-guided representations of the input. Across three relation extraction tasks, our method, ExpBERT, matches a BERT baseline but with 3--20$\times$ less labeled data and improves on the baseline by 3--10 F1 points with the same amount of labeled data.
+
 ## Dependencies
 
 Install all dependencies using `conda`:
