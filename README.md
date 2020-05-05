@@ -72,3 +72,7 @@ Finally, run the following command to produce features: `python create_features.
 ## Model Checkpoints
 
 Finally, we provide checkpoints for all models in our paper. The checkpoints can be found [here](https://drive.google.com/drive/folders/1cTITDWxUSMHiVYeGd0BL0mydGFanwUcW?usp=sharing). Commands for running the checkpoints can be found there as well.
+
+## CodaLab
+
+Stay Tuned!
