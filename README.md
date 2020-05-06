@@ -75,4 +75,4 @@ Finally, we provide checkpoints for all models in our paper. The checkpoints can
 
 ## CodaLab
 
-Stay Tuned!
+https://worksheets.codalab.org/worksheets/0x609d2d6a66194592a7f44fbb67ba9f49
